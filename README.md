@@ -3,14 +3,13 @@ CSD3120_IPA1_2002778
 
 Under hello-xr folder:
 - Contains all the configuration file for my project. 
+- Dependencies all are listed inside package file
 
 Under hello-xr\scr folder:
 - Contains all the code file for my project.
-http://localhost:3000/
 
-Under xrauthor-uploads\assets\waterBalanced folder:
+Under xrauthor-uploads\assets folder:
 - Contains all the data of the video I recorded for teaching how to balanced a water equation using XRAuthor.
-http://localhost:3000/learn/waterBalanced
 
 
 1. hello-xr\webpack.config.js
