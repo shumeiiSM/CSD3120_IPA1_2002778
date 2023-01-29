@@ -1,15 +1,15 @@
-# CSD3120_IPA1_2002778
 # Ting Shu Mei 2002778
+CSD3120_IPA1_2002778
 
 Under hello-xr folder:
-Contains all the configuration file for my project. 
+- Contains all the configuration file for my project. 
 
 Under hello-xr\scr folder:
-Contains all the code file for my project.
+- Contains all the code file for my project.
 http://localhost:3000/
 
 Under xrauthor-uploads\assets\waterBalanced folder:
-Contains all the data of the video I recorded for teaching how to balanced a water equation using XRAuthor.
+- Contains all the data of the video I recorded for teaching how to balanced a water equation using XRAuthor.
 http://localhost:3000/learn/waterBalanced
 
 
@@ -30,6 +30,7 @@ devtool option is set to 'inline-source-map' which means it will include a sourc
 
 
 2. hello-xr\scr\index.ts
+
 This is an typescript file that exports a function called "createXRScene" that creates an XR scene using Babylon.js
 The function takes in two parameters: "canvasID" is a string that specifies the ID of the canvas element on the HTML page where the scene will be rendered, and "authoringData" is an object that contains data used for authoring.
 
@@ -41,6 +42,7 @@ Finally, the function creates a default XR experience for the scene, sets the UI
 
 
 3. hello-xr\scr\index.html
+
 This is an HTML file that creates the structure for displaying the XR scene created by the createXRScene function.
 This ensures that the canvas element that the XR scene is rendered on takes up the entire browser window.
 
