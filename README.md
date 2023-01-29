@@ -30,6 +30,7 @@ devtool option is set to 'inline-source-map' which means it will include a sourc
 
 
 2. hello-xr\scr\index.ts
+
 This is an typescript file that exports a function called "createXRScene" that creates an XR scene using Babylon.js
 The function takes in two parameters: "canvasID" is a string that specifies the ID of the canvas element on the HTML page where the scene will be rendered, and "authoringData" is an object that contains data used for authoring.
 
@@ -41,6 +42,7 @@ Finally, the function creates a default XR experience for the scene, sets the UI
 
 
 3. hello-xr\scr\index.html
+
 This is an HTML file that creates the structure for displaying the XR scene created by the createXRScene function.
 This ensures that the canvas element that the XR scene is rendered on takes up the entire browser window.
 
