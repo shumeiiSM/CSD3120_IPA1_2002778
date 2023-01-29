@@ -11,6 +11,14 @@ Under hello-xr\scr folder:
 Under xrauthor-uploads\assets folder:
 - Contains all the data of the video I recorded for teaching how to balanced a water equation using XRAuthor.
 
+External link to the video:
+https://youtu.be/YkVuektJZTs
+
+Direct link to the video:
+https://github.com/shumeiiSM/CSD3120_IPA1_2002778/blob/main/xrauthor-uploads/assets/videos/0.webm
+
+
+
 
 1. hello-xr\webpack.config.js
 
