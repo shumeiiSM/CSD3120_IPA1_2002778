@@ -1,6 +1,8 @@
 # Ting Shu Mei 2002778
 CSD3120_IPA1_2002778
 
+## File Directory
+
 Under hello-xr folder:
 - Contains all the configuration file for my project. 
 - Dependencies all are listed inside package file
@@ -23,6 +25,7 @@ Under hello-xr\public\assets\textures folder:
 Under xrauthor-uploads\assets folder:
 - Contains all the data of the video I recorded for teaching how to balanced a water equation using XRAuthor.
 
+## Video Links
 External link to the video:
 https://youtu.be/YkVuektJZTs (real life)
 https://youtu.be/nMpANDe1LJc (with interactive format)
@@ -30,14 +33,15 @@ https://youtu.be/nMpANDe1LJc (with interactive format)
 Direct link to the video:
 https://github.com/shumeiiSM/CSD3120_IPA1_2002778/blob/main/xrauthor-uploads/assets/videos/0.webm
 
-Mouse and Keyboard Controls
+
+## Mouse and Keyboard Controls
 - Left Click (select/grab/drag objects)
 - A/D (x-axis rotation)
 - W/S (y-axis rotation)
 - Q/E (z-axis rotation)
 - Scroll wheel (scaling object)
 
-How To Run:
+## How To Run
 
 Localhost Method 
 Go into hello-xr folder:
