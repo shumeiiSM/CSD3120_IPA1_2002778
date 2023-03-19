@@ -52,7 +52,7 @@ Locomotion
 
 Localhost Method - Go into hello-xr folder:
 ```
-1. To install the depenpencies
+1. To install the dependencies
 npm install
 
 2. Run the program
