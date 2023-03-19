@@ -41,10 +41,13 @@ https://github.com/shumeiiSM/CSD3120_IPA1_2002778/blob/main/xrauthor-uploads/ass
 - Q/E (z-axis rotation)
 - Scroll wheel (scaling object)
 
+Locomotion
+- WebXR: Oculus Quest
+- Mode: teleportation
+
 ## How To Run
 
-Localhost Method 
-Go into hello-xr folder:
+Localhost Method - Go into hello-xr folder:
 ```
 1. To install the depenpencies
 npm install
@@ -56,8 +59,7 @@ npm run serve
 http://localhost:3000/
 ```
 
-Python Server Method 
-Go into hello-xr\dist folder:
+Python Server Method - Go into hello-xr\dist folder:
 ```
 1. To install the python server
 python -m http.server
@@ -68,6 +70,8 @@ npm run serve
 3. View the program by go into this link
 http://localhost:8000
 ```
+
+## Description of the code file
 
 1. hello-xr\webpack.config.js
 
@@ -87,14 +91,11 @@ devtool option is set to 'inline-source-map' which means it will include a sourc
 
 2. hello-xr\scr\index.ts
 
-This is an typescript file that exports a function called "createXRScene" that creates an XR scene using Babylon.js
-The function takes in two parameters: "canvasID" is a string that specifies the ID of the canvas element on the HTML page where the scene will be rendered, and "authoringData" is an object that contains data used for authoring.
+First, the code imports necessary classes from the Babylon.js and Babylon.js-gui libraries. Then, it imports an App class from another file.
 
-The function first creates an engine and a scene using the canvas element specified by the canvasID. 
-Then it creates a sphere mesh and a plane mesh, positions them in the scene and sets the position of the 
-plane mesh to be in front of the sphere mesh. The function then creates an AdvancedDynamicTexture for the plane mesh, adds a TextBlock to it and set the text and color of the TextBlock.
+Next, it creates a new Engine object and a canvas element to render the scene on. It also creates a new App object and calls its createScene method, which returns a Promise that resolves to a new Scene object.
 
-Finally, the function creates a default XR experience for the scene, sets the UI options for the session mode to 'immersive-ar' and runs the render loop to render the scene. The last line is for testing, it calls the function and passes in the canvas ID 'renderCanvas' and null as authoringData.
+When the Scene object is ready, the code starts the render loop with the engine.runRenderLoop method, which renders the scene continuously. The window object is also set to listen for the resize event and calls the engine.resize method when triggered.
 
 
 3. hello-xr\scr\index.html
@@ -106,11 +107,15 @@ The body of the HTML file includes a canvas element with the ID "renderCanvas" t
 
 When this HTML file is loaded in a web browser, the createXRScene function is called passing in the canvas ID as an argument, creating an XR scene on the canvas element and displaying it in the browser window.
 
+4. hello-xr\scr\app.ts
 
-4. hello-xr\scr\index.ts
+<br>LoadModel</br>
+The loadModel function takes several parameters, including a Scene object, a name string, a rootID string, a rootName string, a pos vector, a rotate vector, and a scale number.
 
-First, the code imports necessary classes from the Babylon.js and Babylon.js-gui libraries. Then, it imports an App class from another file.
+The function then uses the SceneLoader class to asynchronously import a GLB model from the "assets/models/" directory with the specified name. Once the model is loaded, the function sets various properties on the root mesh, including its ID, name, position, rotation, and scaling.
 
-Next, it creates a new Engine object and a canvas element to render the scene on. It also creates a new App object and calls its createScene method, which returns a Promise that resolves to a new Scene object.
+If the model is not the ground model (named "ground"), the function adds several behaviors to the root mesh, including a PointerDragBehavior for moving the mesh with the mouse, a SixDofDragBehavior for moving the mesh in 6 degrees of freedom, and a MultiPointerScaleBehavior for scaling the mesh with multiple touch points.
 
-When the Scene object is ready, the code starts the render loop with the engine.runRenderLoop method, which renders the scene continuously. The window object is also set to listen for the resize event and calls the engine.resize method when triggered.
+Finally, if the model's name is not "+" or "=", the function creates a TextPlane object and adds it as a child of the root mesh, displaying the model's name in white on a purple background. The root mesh is then added to the scene.
+
+
