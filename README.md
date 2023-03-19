@@ -40,6 +40,9 @@ https://github.com/shumeiiSM/CSD3120_IPA1_2002778/blob/main/xrauthor-uploads/ass
 - W/S (y-axis rotation)
 - Q/E (z-axis rotation)
 - Scroll wheel (scaling object)
+- H (add new h2 models)
+- O (add new o2 models)
+- Delete (delete current object)
 
 Locomotion
 - WebXR: Oculus Quest
