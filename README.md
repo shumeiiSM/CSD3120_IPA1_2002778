@@ -67,10 +67,7 @@ Python Server Method - Go into hello-xr\dist folder:
 1. To install the python server
 python -m http.server
 
-2. Run the program
-npm run serve
-
-3. View the program by go into this link
+2. View the program by go into this link
 http://localhost:8000
 ```
 
