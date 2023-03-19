@@ -109,7 +109,7 @@ When this HTML file is loaded in a web browser, the createXRScene function is ca
 
 4. hello-xr\scr\app.ts
 
-<b>LoadModel</b>
+<b>(LoadModel) - </b>
 The loadModel function takes several parameters, including a Scene object, a name string, a rootID string, a rootName string, a pos vector, a rotate vector, and a scale number.
 
 The function then uses the SceneLoader class to asynchronously import a GLB model from the "assets/models/" directory with the specified name. Once the model is loaded, the function sets various properties on the root mesh, including its ID, name, position, rotation, and scaling.
@@ -118,5 +118,5 @@ If the model is not the ground model (named "ground"), the function adds several
 
 Finally, if the model's name is not "+" or "=", the function creates a TextPlane object and adds it as a child of the root mesh, displaying the model's name in white on a purple background. The root mesh is then added to the scene.
 
-<b>Keyboard and Mouse</b>
+<b>(Keyboard and Mouse) - </b>
 This code sets up event listeners for mouse clicks, keyboard inputs, and mouse wheel scrolling. When the user clicks on a mesh, it is selected and can be moved using the WASDQE keys. If the Delete key is pressed, the selected mesh is deleted. Additionally, if the user scrolls the mouse wheel while a mesh is selected, it can be scaled up or down. Finally, if the user presses the "h" key, a new mesh called "H2" is loaded into the scene, and if the "o" key is pressed, a new mesh called "O2" is loaded.
