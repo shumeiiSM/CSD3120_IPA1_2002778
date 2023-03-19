@@ -36,10 +36,10 @@ https://github.com/shumeiiSM/CSD3120_IPA1_2002778/blob/main/xrauthor-uploads/ass
 
 ## Mouse and Keyboard Controls
 - Left Click (select/grab/drag objects)
-- A/D (x-axis rotation)
-- W/S (y-axis rotation)
-- Q/E (z-axis rotation)
 - Scroll wheel (scaling object)
+- A/D (x-axis position)
+- W/S (y-axis position)
+- Q/E (z-axis position)
 - H (add new h2 models)
 - O (add new o2 models)
 - Delete (delete current object)
