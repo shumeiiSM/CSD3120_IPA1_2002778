@@ -8,6 +8,18 @@ Under hello-xr folder:
 Under hello-xr\scr folder:
 - Contains all the code file for my project.
 
+Under hello-xr\scr\components folder:
+- Contains all the export classes code I used to create the Mesh and Text
+
+Under hello-xr\public\assets\models folder:
+- Contains all the 3D models (.glb) I used in the scene
+
+Under hello-xr\public\assets\sounds folder:
+- Contains the background audio (.mp3) I used in the scene
+
+Under hello-xr\public\assets\textures folder:
+- Contains all the images (.png) I used in the scene
+
 Under xrauthor-uploads\assets folder:
 - Contains all the data of the video I recorded for teaching how to balanced a water equation using XRAuthor.
 
@@ -15,10 +27,43 @@ External link to the video:
 https://youtu.be/YkVuektJZTs (real life)
 https://youtu.be/nMpANDe1LJc (with interactive format)
 
-
 Direct link to the video:
 https://github.com/shumeiiSM/CSD3120_IPA1_2002778/blob/main/xrauthor-uploads/assets/videos/0.webm
 
+Mouse and Keyboard Controls
+- Left Click (select/grab/drag objects)
+- A/D (x-axis rotation)
+- W/S (y-axis rotation)
+- Q/E (z-axis rotation)
+- Scroll wheel (scaling object)
+
+How To Run:
+
+Localhost Method 
+Go into hello-xr folder:
+```
+1. To install the depenpencies
+npm install
+
+2. Run the program
+npm run serve
+
+3. View the program by go into this link
+http://localhost:3000/
+```
+
+Python Server Method 
+Go into hello-xr\dist folder:
+```
+1. To install the python server
+python -m http.server
+
+2. Run the program
+npm run serve
+
+3. View the program by go into this link
+http://localhost:8000
+```
 
 1. hello-xr\webpack.config.js
 
@@ -56,3 +101,12 @@ This ensures that the canvas element that the XR scene is rendered on takes up t
 The body of the HTML file includes a canvas element with the ID "renderCanvas" that matches the canvasID parameter passed to the createXRScene function. The canvas element is set to take up the entire browser window. The script tag at the end of the body imports the index.ts file which is the file that contains the createXRScene function.
 
 When this HTML file is loaded in a web browser, the createXRScene function is called passing in the canvas ID as an argument, creating an XR scene on the canvas element and displaying it in the browser window.
+
+
+4. hello-xr\scr\index.ts
+
+First, the code imports necessary classes from the Babylon.js and Babylon.js-gui libraries. Then, it imports an App class from another file.
+
+Next, it creates a new Engine object and a canvas element to render the scene on. It also creates a new App object and calls its createScene method, which returns a Promise that resolves to a new Scene object.
+
+When the Scene object is ready, the code starts the render loop with the engine.runRenderLoop method, which renders the scene continuously. The window object is also set to listen for the resize event and calls the engine.resize method when triggered.
