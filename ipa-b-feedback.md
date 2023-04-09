@@ -28,3 +28,5 @@ Odd interactions with environment objects using gizmos;
 Using all gizmos on an object at the same time could be confusing;
 
 Teleportation does not work properly in VR;
+
+
